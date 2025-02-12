@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./src/styles/style.css">
+        <link rel="stylesheet" href="./src/styles/reset.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Numans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Numans&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <title>K-Stock</title>
+    </head>
+
+    <body class="body">
+        <nav class="navegacao">
+            <h1 class="navegacao__titulo">K-Stock</h1>
+
+            <div class="navegacao__lista">
+                <a href="#" class="navegacao__lista__itens">
+                    <img src="./src/images/painel.svg" class="navegaccao__images" alt="">
+                    <p>PAINEL</p>
+                </a>
+                <a href="#" class="navegacao__lista__itens">
+                    <img src="./src/images/estoque.svg" class="navegaccao__images" alt="">
+                    <p>ESTOQUE</p>
+                </a>
+                <a href="#" class="navegacao__lista__itens">
+                    <img src="./src/images/consignados.svg" class="navegaccao__images" alt="">
+                    <p>CONSIGNADOS</p>
+                </a>
+                <a href="#" class="navegacao__lista__itens">
+                    <img src="./src/images/vendas.svg" class="navegaccao__images" alt="">
+                    <p>VENDAS</p>
+                </a>
+                <a href="#" class="navegacao__lista__itens">
+                    <img src="./src/images/integracoes.svg" class="navegaccao__images" alt="">
+                    <p>INTEGRAÇÕES</p>
+                </a>
+                <a href="#" class="navegacao__lista__itens">
+                    <img src="./src/images/exportar.svg" class="navegaccao__images" alt="">
+                    <p>EXPORTAR</p>
+                </a>
+            </div>
+
+        </nav>
+
+        <main class="section">
+            <article class="section__header">
+                <a href="#">
+                    <img src="./src/images/sair.svg" class="section__header__imagem" alt="">
+                </a>
+            </article>
+
+            <article class="section__main">
+
+                <section class="section__main__section">
+                    <nav class="section__main__section__nav">
+                        <input type="search" placeholder="Pesquisar por ID, Descrição ou Código" name="" id="" class="input_pesquisar">
+                        <input type="button" value="Pesquisar" class="input_filtrar">
+                    </nav>
+                    <input type="button" value="Incluir novo produto" class="input_incluir">
+
+                </section>
+
+                <ul class="lista_descricao">
+                    <li>ID</li>
+                    <li>Descrição</li>
+                    <li>Editar</li>
+                    <li>Deletar</li>
+                    <li>Código</li>
+                    <li>Unidade</li>
+                    <li>Preço</li>
+                    <li>Estoque</li>
+                    <li>Estoque Mínimo</li>
+                    <li>Status de Estoque</li>
+                </ul>
+
+                <ul id="section__main__itens">
+                </ul>
+            </article>
+
+        </main>
+        <script src="./script.js"></script>
+    </body>
+</html>
