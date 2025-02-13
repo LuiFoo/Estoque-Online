@@ -20,6 +20,7 @@ let produto = [
 
 function carregarItens() {
     const localCarregamento = document.querySelector("#section__main__itens");
+    localCarregamento.innerHTML = ''
 
     produto.forEach(item => {
         // Criar li para o item
@@ -102,9 +103,13 @@ function editarProduto(id) {
 }
 
 // Função para deletar o produto
-function deletarProduto(id) {
-    console.log("Apagar produto com ID:", id);
-    // Lógica de edição aqui
+function deletarProduto(idBotao) {
+    const indice = produto.findIndex(item => item.id === idBotao);
+    produto.splice(indice, 1);
+
+    console.log(indice);
+    
+    carregarItens();
 }
 
 carregarItens();
